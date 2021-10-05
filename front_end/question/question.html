@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="question.css">
+	<script src="../component/question/quesion.js" defer></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
+
+	<title>Question</title>
+</head>
+<body>
+	<div class="container">
+		<div class="main">
+			<div class="grid-container">
+				<div class="grid-item">
+					<div class="pageTitle">QUESTION</div>
+				</div>
+				<div class="grid-item">
+					<button class="button">Ask question</button>
+				</div>
+			</div>
+			<div class="grid-container2" style="margin-top: 10px;">
+				<div class="grid-item">
+					<div>300 question</div>
+				</div>
+				<div class="grid-item">
+					<div class="btn-group" style="float: right;">
+						<button class="active">Newest</button>
+						<button>Upvote</button>
+						<button>Comment</button>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="grid-question">
+					<div class="grid-item" style="text-align: center; display: grid; grid-template-rows: 50% 50%;">
+						<div class="vote text-left">
+							<span>0</span>
+							<div>Votes</div>
+						</div>
+						<div class="answer text-left">
+							<span>0</span>
+							<div>Answers</div>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="title" style="margin-bottom: 5px"><a href="#">About Springboot</a></div>
+						<div class="content">
+							Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Debitis cumque optio saepe totam fuga iusto dolor eaque a repudiandae error? Non facilis nam, ad rerum adipisci? Harum, sequi aliquam exercitationem?
+						</div>
+						<div class="bottom">		
+							<div class="tags">
+								<a href="#">java</a>
+								<a href="#">springboot</a>
+							</div>	
+							<div class="user">
+								<div class="time">
+									asked <span>26 secs</span> ago
+								</div>
+								<div class="askedBy">
+									<a href="#"><div class="image"><img src="user-01.png" alt="" width="32px"></div></a>
+									<a href=""><div class="name">Nguyễn Lan Anh</div></a>		
+								</div>
+							</div>	
+						</div>			
+					</div>
+				</div>
+	
+				<div class="grid-question">
+					<div class="grid-item" style="text-align: center; display: grid; grid-template-rows: 50% 50%;">
+						<div class="vote text-left">
+							<span>0</span>
+							<div>Votes</div>
+						</div>
+						<div class="answer text-left">
+							<span>0</span>
+							<div>Answers</div>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="title" style="margin-bottom: 5px"><a href="#">About Springboot</a></div>
+						<div class="content">
+							Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Debitis cumque optio saepe totam fuga iusto dolor eaque a repudiandae error? Non facilis nam, ad rerum adipisci? Harum, sequi aliquam exercitationem?
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum blanditiis, natus, optio magni, totam placeat, officiis odit minus nostrum temporibus facere dolorum tenetur maxime ducimus sequi adipisci saepe! Fugit, officia?
+						</div>
+						<div class="bottom">		
+							<div class="tags">
+								<a href="#">java</a>
+								<a href="#">springboot</a>
+							</div>	
+							<div class="user">
+								<div class="time">
+									asked <span>26 secs</span> ago
+								</div>
+								<div class="askedBy">
+									<a href="#"><div class="image"><img src="user-01.png" alt="" width="32px"></div></a>
+									<a href=""><div class="name">Nguyễn Lan Anh</div></a>		
+								</div>
+							</div>	
+						</div>			
+					</div>
+				</div>
+			</div>
+			<custom-question id="question" url="../component/question/"></custom-question>
+
+			<script>
+				console.log(window.location.href);
+				var question = document.querySelector("#question");
+				var json = {
+					title: "Spring boot",
+					content: "lam the nao de tao project spring boot tren intellij",
+					owner: {username: "lananh"},
+					createdDate: "2021-04-19 15:29:27",
+					upvoteCount: 15,
+					comments: ["lananh", "minhanh"],
+					tags: ["springboot", "java"]
+				};
+				json = JSON.stringify(json);
+				console.log(json);
+				question.setAttribute("question", json);
+			</script>
+
+			<div class="pageable">
+				<div class="item" style="float: right;">
+					<a href="" class="activeItem">15</a>
+					<a href="" class="numItem">30</a>
+					<a href="" class="numItem">50</a>
+					<span class="numItem" style="border: none;">per page</span>
+				</div>
+				<div class="item" style="float: left; margin-left: 10px">
+					<a href="" class="numItem"><i class="fas fa-arrow-left"></i> prev</a>
+					<input type="number" min="1" max="5" class="numItem" value="4" disabled="disabled">
+					<a href="" class="numItem">next <i class="fas fa-arrow-right"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="rightbar">
+			<div class="numAnswer" style="margin-bottom: 18px;">Related Tags</div>
+			<div class="related">
+				<div class="itemRelated">
+					<a href="#" class="tag">spring boot</a>
+					<span>x <span class="numPost">150</span></span>
+				</div>
+				<div class="itemRelated">
+					<a href="#" class="tag">spring boot</a>
+					<span>x <span class="numPost">150</span></span>
+				</div>
+				<div class="itemRelated">
+					<a href="#" class="tag">spring boot</a>
+					<span>x <span class="numPost">150</span></span>
+				</div>
+				<div class="itemRelated">
+					<a href="#" class="tag">spring boot</a>
+					<span>x <span class="numPost">150</span></span>
+				</div>
+			</div>
+	</div>
+</body>
+</html>

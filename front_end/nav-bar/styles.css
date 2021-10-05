@@ -1,0 +1,109 @@
+/* Add a black background color to the top navigation */
+
+.topnav {
+    /* background-color: rgb(31, 31, 31); */
+    background-color: rgb(107, 158, 173);
+    overflow: hidden;
+}
+
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+    background-color: rgb(128, 125, 125);
+    text-decoration: none;
+    color: rgb(248, 238, 238);
+}
+
+.topnav .home {
+    display: none;
+}
+
+.action {
+    float: right;
+    width: 70%;
+}
+
+.action a {
+    float: right;
+}
+
+.action input[type=text] {
+    width: 80%;
+    float: left;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+.icon {
+    float: left;
+    overflow: hidden;
+}
+
+.icon-content {
+    display: none;
+    position: absolute;
+    background-color: #f5eded;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the icon */
+
+.icon-content a {
+    float: none;
+    color: rgb(19, 18, 18);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+/* Add a grey background color to icon links on hover */
+
+.icon-content a:hover {
+    background-color: rgb(112, 109, 109);
+    text-decoration: none;
+}
+
+
+/* Show the icon menu on hover */
+
+.icon:hover .icon-content {
+    display: block;
+}
+
+.icon .dropicon {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(236, 231, 231);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */

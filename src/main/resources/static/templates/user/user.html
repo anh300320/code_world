@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../templates/user/user.css">
+    <script src="../../component/nav/nav.js" defer></script>
+    <script src="../../component/question/pageable.js" defer></script>
+    <script src="../../component/user/UserInfo.js" defer></script>
+
+    <script src="../../templates/user/user.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title>User</title>
+    <link rel="icon" href="../../templates/icon.png" type="image/icon type">
+</head>
+<body>
+    <custom-nav url="../../component/nav/"></custom-nav>
+    <div class="container">
+        <div class="grid-item">
+            <h2>Users <span class="quantity"></span></h2>
+        </div>
+        <div class="grid-container" style="margin-top: 50px;">
+            <div class="grid-item">
+                <div class="search">
+                    <input placeholder="Filter by user name" id="search">
+                    <i class="fas fa-search icon"></i>
+
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="btn-group" style="float: right;">
+                    <button style="background: #d6d9dc;">Reputation</button>
+                    <button>Questions</button>
+                    <button>New users</button>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item" id="content-container">
+            <div id="content" class="grid-layout">            
+            </div>
+            <div class="pageable"></div> 
+        </div>
+    </div>
+</body>
+</html>

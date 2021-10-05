@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <script src="../component/profile/profile.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="grid">
+            <a href="" class="active link">Profile</a>
+            <a href="" class="link">Activity</a>
+            <a class="link">Edit profile</a>
+        </div>
+        <custom-profile id="profile" url="../component/profile/"></custom-profile>
+        <script>
+            var p = {
+                reputation: 15,
+                fullname: "Nguyen Lan Anh",
+                about: "Dai hoc bach khoa ha  noi",
+                createdDate: "2021-04-19 15:29:27",
+                numQuestions: 150,
+                numAnswers: 16,
+                numTags: 7
+            }
+            
+            p = JSON.stringify(p);
+            document.querySelector("#profile").setAttribute("user", p);         
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../templates/profile/profile.css">
+    <script src="../../templates/profile/activity.js"></script>
+    <script src="../../component/question/quesion.js"></script>
+    <script src="../../component/nav/nav.js" defer></script>
+    <script src="../../component/profile/groupLink.js" defer></script>
+    <script src="../../component/question/pageable.js" defer></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title>Activity</title>
+    <link rel="icon" href="../../templates/icon.png" type="image/icon type">
+</head>
+<body>
+    <custom-nav url="../../component/nav/"></custom-nav>
+    <div class="container">
+        <group-link url="../../component/profile/" active="2"></group-link>
+
+        <div class="grid">
+            <div class="card top-card">
+                <div class="icon"><i class="fas fa-atom"></i></div>
+                <div>Reputation is how the community thanks you</div>
+                <div class="caption">When users upvote your helpful posts, you'll earn reputation</div>
+            </div>
+            <div class="card top-card">
+                <div class="icon"><i class="far fa-bookmark"></i></div>
+                <div>Book mark question help you save the good questions</div>
+                <div class="caption">You will quickly find it again</div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <a id="questions" class="link active1">Questions</a>
+            <a id="answers" class="link">Answers</a>
+            <a id="tags" class="link">Tags</a>
+            <a id="bookmarks" class="link">Bookmarks</a>
+        </div>
+        <div class="activity-content">
+            <div class="grid-container2" style="margin-top: 10px;">
+                <div class="quantity"></div>
+            </div>
+            <div id="content">
+            </div>
+            <div class="pageable"></div>
+        </div>        
+    </div>
+    
+</body>
+</html>

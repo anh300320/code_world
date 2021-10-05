@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="../profile/profile.css">
+
+    <script src="nav.js" defer></script>
+    <script src="../question/quesion.js" defer></script>
+    <script src="../profile/profile.js" defer></script>
+    <script src="../question/pageable.js" defer></script>
+    <script src="../question/comment.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="comment"></div>
+    <script>
+        var json = {
+            title: "Spring boot",
+            content: "lam the nao de tao project spring boot tren intellij",
+            owner: {username: "lananh", id:"2"},
+            createdDate: "2021-04-19 15:29:27",
+            upvoteCount: 15,
+            comments: ["lananh", "minhanh"],
+            tags: ["springboot", "java"],
+            solve: 1
+        };
+        json = JSON.stringify(json);
+        console.log(json);
+        const comment = document.createElement("custom-comment");
+        comment.setAttribute("url", "../question/");
+        comment.setAttribute("comment", json);
+
+        document.getElementById("comment").appendChild(comment);
+    </script>
+</body>
+</html>

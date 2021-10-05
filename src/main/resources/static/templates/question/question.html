@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../../templates/question/question.css">
+	<script src="../../component/question/quesion.js" defer></script>
+	<script src="../../component/nav/nav.js" defer></script>
+
+	<script src="../../templates/question/question.js"></script>
+	<script src="../../component/question/pageable.js"></script>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
+	<title>Question</title>
+	<link rel="icon" href="../../templates/icon.png" type="image/icon type">
+</head>
+<body>
+	<custom-nav url="../../component/nav/"></custom-nav>
+	<div class="container">
+		<div class="main" style="width: 100%;">
+			<div class="grid-container" style="margin-top:15px">
+				<div class="grid-item">
+					<div class="pageTitle">QUESTION</div>
+				</div>
+				<div class="grid-item">
+					<a href="/ask-question" class="button">Ask question</a>
+				</div>
+			</div>
+			<div class="grid-container2" style="margin-top: 10px;">
+				<div class="grid-item">
+					<div id="numQuestion">300 question</div>
+				</div>
+				<div class="grid-item">
+					<div class="btn-group" style="float: right;">
+						<button class="active">Newest</button>
+						<button>Upvote</button>
+						<button>Comment</button>
+					</div>
+				</div>
+			</div>
+			<div id="questions">
+				
+			</div>
+			<div class="pageable">
+				<div id="pageSize" class="item" style="float: right;">
+					<span class="activeItem pageItem">15</span>
+					<span class="numItem pageItem">30</span>
+					<span class="numItem pageItem">50</span>
+					<span class="numItem" style="border: none;">per page</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

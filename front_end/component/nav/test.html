@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="../profile/profile.css">
+
+    <script src="nav.js" defer></script>
+    <script src="../question/quesion.js" defer></script>
+    <script src="../profile/profile.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <custom-nav linkCss="nav.css" url=""></custom-nav>
+    <custom-question id="question" url="../question/" currUser="1"></custom-question>
+    <div class="container">
+        <custom-profile id="profile" url="../profile/"></custom-profile>
+    </div>
+    <button class="delete">Delete</button>
+    <script>
+        var question = document.querySelector("#question");
+        var json = {
+            title: "Spring boot",
+            content: "lam the nao de tao project spring boot tren intellij",
+            owner: {username: "lananh", id:"2"},
+            createdDate: "2021-04-19 15:29:27",
+            upvoteCount: 15,
+            comments: ["lananh", "minhanh"],
+            tags: ["springboot", "java"]
+        };
+        json = JSON.stringify(json);
+        console.log(json);
+        question.setAttribute("question", json);
+
+        var profile = {
+            reputation: 15,
+            fullname: "Nguyen Lan Anh",
+            about: "Dai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noivDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noivDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noivDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noiDai hoc bach khoa ha  noi",
+            createdDate: "2021-04-19 15:29:27",
+            numQuestions: 150,
+            numAnswers: 16,
+            numTags: 7
+        }
+
+        profile = JSON.stringify(profile);
+        document.querySelector("#profile").setAttribute("user", profile);
+    </script>
+</body>
+</html>

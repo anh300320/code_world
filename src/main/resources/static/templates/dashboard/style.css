@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    
+}
+.title{
+    margin-top: 100px;
+    background-color: #f8f8f8;
+    display: flex;
+}
+.content{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content h1{
+    margin-top: 20px;
+
+    color: #1F1F1F;
+    margin-bottom: 28px;
+    font-size: 35px;
+    line-height: 54px;
+}
+.content p{
+  
+    color: #4d5155;
+    font-size: 21px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.4px;
+    line-height: 36px;
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+.btn{
+    
+    border-radius: 3px;
+    color: #fff;
+    padding: 15px;
+    background: #1290A4;
+    font-size: 16px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+}
+.our-team{
+    margin-top: 40px;
+    text-align: center;
+    font-family: tahoma;
+
+}
+.our-team h2{
+    font-size: 30px;
+    margin-bottom: 28px;
+}
+.our-team p{
+    color: #4d5155;
+    font-size: 21px;
+    
+    
+}
+.team{
+    margin-top: 64px;
+    margin-bottom: 64px;
+    filter: grayscale(75%);
+    padding: 0 8px;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+
+}
+.image{
+    width: 24.99999%;
+    float: left;
+    
+}
+.img{
+    width: 24.99999%;  
+}
+.card{
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    font-family: "Raleway", sans-serif;
+    padding: 0px 8px 0px 8px;
+    text-align: center;
+    margin-left: 16px;
+    height: 200px;
+}
+.card-container{
+    padding: 0.01em 16px;
+ 
+}
+.card-container h3{
+    padding-top: 0.5em;
+    font-size: 21px;
+
+}
+.card-container p{
+    padding-top: 0.5em;
+    font-size: 15px;
+    
+}
+.contact{
+    text-align: center;
+    font-family: tahoma;
+    margin-top: 350px;
+   
+}
+.contact h2{
+    font-size: 30px;
+    margin-bottom: 28px;
+    margin-top: 5em;
+}
+.contact p{
+    padding-top: 0.5em;
+    font-size: 19px;
+}
+.time{
+    font-family: tahoma;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 20px;
+    opacity: 0.6;
+    
+}
+.btn-pink{
+    border-radius: 3px;
+    color: #fff;
+    padding: 15px;
+  
+    font-size: 16px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    background: #F46F7C;
+   
+  
+}
+
+
+
+@media (min-width: 992px){}
+.content {
+    flex: 0 0 auto;
+    width: 55%;
+}

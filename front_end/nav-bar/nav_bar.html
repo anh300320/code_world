@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+    <div class="topnav" id="myTopnav">
+        <!-- <a href="#" class="active"><i class="fas fa-bars"></i></a> -->
+        <div class="icon"><i class="fas fa-bars dropicon"></i>
+            <div class="icon-content ">
+                <a href="#">Questions</a>
+                <a href="#">Tag</a>
+                <a href="#">User</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" class="home" onclick="myFunction()">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#forteams">For Team</a>
+        <div class="action">
+            <input type="text" placeholder="Search..">
+
+            <a href="#login">Login</a>
+            <a href="#sign_up">Sign up</a>
+        </div>
+
+
+    </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

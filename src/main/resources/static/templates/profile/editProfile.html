@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../templates/profile/profile.css">
+    <script src="../../component/nav/nav.js" defer></script>
+    <script src="../../component/profile/groupLink.js" defer></script>
+
+    <script src="../../templates/profile/editProfile.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <title>Edit Profile</title>
+    <link rel="icon" href="../../templates/icon.png" type="image/icon type">
+</head>
+<body>
+    <custom-nav url="../../component/nav/"></custom-nav>
+    <div class="container">
+        <group-link url="../../component/profile/" active="3"></group-link>
+        <div class="pageTitle" style="margin-bottom: 10px">Edit your profile</div>
+        <div class="form">            
+            <form id="formEdit">
+                <div style="display: flex;">
+                    <div style="flex: 50%; margin-right: 5px;">
+                        <label for="firstname">Firstname</label>
+                        <input class="input" type="text" name="firstname" id="firstname">
+                    </div>
+                    <div style="flex: 50%; margin-left: 5px;">
+                        <label for="firstname">Lastname</label>
+                        <input class="input" type="text" name="lastname" id="lastname">
+                    </div>
+                </div>
+                <label for="username">Username</label>
+                <input class="input" type="text" name="username" id="username" disabled></input>
+                <label for="role">Role</label>
+                <input class="input" type="text" name="role" id="role" disabled></input>
+                <label for="about">Something about you</label>
+                <textarea class="input" name="about" id="about" rows="4"></textarea>
+                <div style="display: flex; justify-content: space-between;">
+                    <input class="button" type="submit" value="Save" style="display: block; float: none; margin-top: 15px"> 
+                    <button class="button" id="changePassword">Change password</button>   
+                </div>                        
+            </form>
+
+            <form id="formChange">
+                <label for="old">Old password</label>
+                <input type="password" id="oldPass" class="input">
+                <label for="new">New password</label>
+                <input type="password" id="newPass" class="input">
+                <label for="reNew">Repeat password</label>
+                <input type="password" id="reNew" class="input">
+                <input type="submit" class="button" value="Save Change" id="savePassword">
+            </form>
+        </div>        
+    </div>
+    
+</body>
+</html>

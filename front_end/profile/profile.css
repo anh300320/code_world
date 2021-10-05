@@ -1,0 +1,212 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.top-card div {
+    padding: 7px;
+}
+
+.profile {
+    margin-left: 25px;
+}
+
+.about {
+    color: #6a737c;
+    margin-top: 10px;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+	font-family: tahoma;
+    font-size: 13px;
+}
+
+.grid {
+    display: flex;
+    margin: 12px;
+}
+
+.link {
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 1000px;
+    margin: 2px;
+    color: #535a60;
+    text-decoration: none;
+}
+
+.link:hover{
+    background-color: #eff0f1;
+}
+
+.link.active {
+    background-color: #f48024;
+    color: #fff;
+}
+
+/* avatar css */
+
+.avatar {
+    box-shadow: inset 0 10em 0 #eff0f1 !important;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;    
+}
+
+.reputation {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #6a737c;
+}
+
+#reputation {
+    font-size: 20px;
+    color: #000;
+}
+
+.name {
+    font-weight: 700 !important;
+    color: #0c0d0e !important;
+    font-size: 24px;
+}
+
+.createdDate {
+    color: #9199a1;
+    font-style: italic;
+    border-bottom: 1px solid #9199a1;
+    padding-bottom: 5px;
+}
+
+.card {
+    flex: 33.33%;
+    border: 1px solid #9199a1;
+    margin: 5px;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.card .title{
+    color: #0077cc;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.card .num {
+    color: #535a60;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.activity-content{
+    margin: 12px;
+}
+
+.activity-content .quantity {
+    font-size: 20px;
+    color: #535a60;
+}
+
+/* activity css */
+.navigation{
+    display: flex;
+    margin: 12px;
+}
+
+.navigation.link{
+    text-decoration: none;
+    cursor: pointer;
+    color: #242729;
+    padding: 4px 12px;
+    font-size: 12px;
+}
+
+.top-card{
+    flex: 50%;
+    margin: 15px;
+    text-align: center;
+    padding: 31px;
+    font-size: 16px;
+    background: #fafafb;
+}
+
+.top-card .caption {
+    color: #6a737c;
+}
+
+.top-card .icon {
+    color: #6a737c;
+    font-size: 60px;
+}
+
+.active1 {
+    background-color: #d6d9dc;
+}
+
+.btn-group button {
+    background-color: #FFF;
+    border: 1px solid #9fa6ad;
+    color: #6a737c;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  .btn-group button:last-child {
+    border-radius: 0 3px 3px 0;  
+  }
+  
+  .btn-group button:first-child {
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #fafafb;
+  }
+
+  .grid-container2 {
+	align-items: center;
+	display: grid;
+	grid-template-columns: 40% 60%
+}
+.grid-item {
+	font-family: tahoma;
+}
+
+button.active {
+	background: #d6d9dc;
+}
+
+/* tag css */
+.tag {
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 12px;
+	color: #39739d;
+	background-color: #e1ecf4;
+	padding: .4em .5em;
+    margin: 2px 2px 2px 0;
+    border-radius: 3px;
+    line-height: 1;
+}
+
+@media screen and (max-width: 500px){
+	.grid.block{
+        display: block;
+    }
+}

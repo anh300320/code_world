@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.user-profile{
+    height: 280px;
+}
+
+.profile {
+    flex: 40%;
+    margin-left: 25px;
+    
+}
+
+.about {
+    color: #6a737c;
+    margin-top: 10px;
+    overflow-y: scroll;
+    height: 240px;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+	font-family: tahoma;
+    font-size: 13px;
+}
+
+.grid {
+    display: flex;
+    margin: 12px;
+}
+
+.link {
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 1000px;
+    margin: 2px;
+    color: #535a60;
+    text-decoration: none;
+}
+
+.link:hover{
+    background-color: #eff0f1;
+}
+
+.link.active {
+    background-color: #f48024;
+    color: #fff;
+}
+
+/* avatar css */
+
+.avatar {
+    box-shadow: inset 0 10em 0 #eff0f1 !important;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;   
+    flex: 20%; 
+}
+
+.reputation {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #6a737c;
+}
+
+#reputation {
+    font-size: 20px;
+    color: #000;
+}
+
+.name {
+    font-weight: 700 !important;
+    color: #0c0d0e !important;
+    font-size: 24px;
+}
+
+.createdDate {
+    color: #9199a1;
+    font-style: italic;
+    border-bottom: 1px solid #9199a1;
+    padding-bottom: 5px;
+}
+
+.grid-col {
+    display: flex;
+    flex-direction: column;
+    flex: 40%;
+    margin-left: 25px;
+}
+
+.card {
+    flex: 33.33%;
+    border: 1px solid #9199a1;
+    margin: 5px;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.card .title{
+    color: #0077cc;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.card .num {
+    color: #535a60;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 500px){
+	.grid.block{
+        display: block;
+    }
+}
+
+
